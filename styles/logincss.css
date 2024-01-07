@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+::selection {
+  background-color: rgba(255, 207, 234, 0.6);
+  color: #000; /* 你想要的文字颜色 */
+}
+
+/* footer置底 */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex; /*使物件依序排列*/
+  flex-direction: column; /*使物件垂直排列*/
+}
+.container {
+  flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+}
+
+/* 沒錯^^ */
+
+body {
+  position: relative;
+}
+
+body img.fixed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 1;
+  left: 0;
+}
+
+body header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body header section.logo {
+  flex: 2 1 400px;
+  display: flex;
+  align-items: center;
+}
+body header section.logo h1 {
+  font-size: 2.5rem;
+}
+body header section.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+body header nav {
+  flex: 5 1 500px;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+body header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.2s ease;
+  padding-bottom: 0.3rem;
+}
+body header nav ul li a:hover {
+  color: rgba(152, 57, 255, 0.5);
+  border-bottom: 3px solid rgba(152, 57, 255, 0.5);
+}
+
+body header nav ul li a.active {
+  color: rgba(152, 57, 255, 0.5);
+}
+
+body footer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body footer section.logo img {
+  width: 10vw;
+}
+body footer section.logo h3 {
+  font-size: 1.5rem;
+}
+body footer section.links {
+  margin-top: 2rem;
+}
+body footer section.links a img {
+  width: 3vh;
+  margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  body header section.logo {
+    flex-direction: column;
+  }
+  body header section.logo img {
+    width: 50vw;
+    height: 50vw;
+  }
+  body header nav ul {
+    flex-direction: column;
+  }
+  body header nav ul li {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+/* 登入表單 */
+
+.container {
+  margin-top: 8rem;
+  margin-bottom: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid rgb(210, 140, 255);
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 0px;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 3px;
+}
+
+.card-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.form-control::placeholder {
+  opacity: 0.5;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+.form-control-label {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+button.btn {
+  width: 6rem;
+  height: 2rem;
+  color: #ffffff;
+  background-color: rgb(210, 140, 255);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+button.btn:hover {
+  background-color: rgb(227, 183, 255);
+  cursor: pointer;
+}
+
+button.btn:active {
+  background-color: rgb(190, 86, 255);
+  cursor: pointer;
+}
+
+.px-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text {
+  font-size: 12px;
+  color: #ffffff;
+}

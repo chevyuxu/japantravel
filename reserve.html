@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日本之漫遊者 | 預約行程</title>
+
+  <link rel="stylesheet" href="./styles/reservecss.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <img class="fixed-image" src="./images/櫻花.jpg" alt="fixed-image" />
+
+  <header>
+    <section class="logo">
+      <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+      <h1>日本之漫遊者</h1>
+    </section>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"></i> 日本旅遊</a>
+        </li>
+        <li>
+          <a href="login.html"></i> 會員專區</a>
+        </li>
+        <li>
+          <a href="reserve.html" class="active"></i> 預約行程</a>
+        </li>
+        <li>
+          <a href="about.html"></i> 關於我們</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="info-circles">
+      <h3>選擇遊玩主題</h3>
+      <div class="circles">
+        <div class="circle">
+          <img src="./images/北海道雪景.jpg" alt="北海道雪景" />
+          <p>北海道雪景，美不勝收</p>
+        </div>
+        <div class="circle">
+          <img src="./images/日本壽司.jpg" alt="日本壽司" />
+          <p>日本道地壽司與美食</p>
+        </div>
+        <div class="circle">
+          <img src="./images/富士山.jpg" alt="富士山" />
+          <p>富士山風景與溫泉</p>
+        </div>
+        <div class="circle">
+          <img src="./images/清水寺.jpg" alt="清水寺" />
+          <p>京都清水寺，千年古都</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="content">
+
+      <div class="dateDays">
+        <div class="datePart">
+          <label for="startDate">遊玩日期：</label>
+          <input type="date" id="startDate" class="start-date">
+
+          <label for="endDate">～</label>
+          <input type="date" id="endDate" class="end-date">
+        </div>
+
+        <div class="confirmPart">
+          <button class="confirm-button">確認</button>
+        </div>
+      </div>
+
+
+      <div class="result">
+
+      </div>
+    </section>
+
+    <button id="scrollToTopButton" class="scroll-to-top-button" title="回到頂部">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+  </div>
+
+  <footer>
+    <section class="logo">
+      <img src="./images/網站Logo.svg" alt="logo" />
+      <h3>♥ 日 本 之 漫 遊 者 ♥</h3>
+    </section>
+    <section class="links">
+      <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+      <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+      <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+      <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+    </section>
+  </footer>
+
+
+  <script src="/js/reservejs.js"></script>
+</body>
+
+</html>
