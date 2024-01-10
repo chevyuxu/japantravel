@@ -179,18 +179,26 @@ body div section.info-circles div.circles div.circle img:hover {
 }
 
   .confirm-button {
-  background-color: #8a2be2;
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(210, 140, 255);
   color: #ffffff;
-  border: none;
-  border-radius: 20px;
+  /* border: none; */
+  border: 1px solid rgba(152, 57, 255, 0.5);
+  border-radius: 5px;
   margin: 1rem;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  /* padding: 10px 20px; */
+
 }
 
 .confirm-button:hover {
-  background-color: #6a1fba;
+  background-color: rgb(227, 183, 255);
+  cursor: pointer;
+}
+
+.confirm-button:active {
+  background-color: rgb(190, 86, 255);
+  cursor: pointer;
 }
 
 input[type="date"] {
@@ -272,7 +280,7 @@ div.dateDays div.confirmPart {
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #8a2be2;
+  background-color: rgb(190, 86, 255);
   color: #fff;
   border: none;
   border-radius: 50%;
